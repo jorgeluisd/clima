@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class WeatherForm extends Component {
 
@@ -42,6 +43,7 @@ class WeatherForm extends Component {
                                     <option value="US">Estados Unidos</option>
                                     <option value="MX">Mexico</option>
                                     <option value="PE">Peru</option>
+                                    <option value="VE">Venezuela</option>
                                 </select>
                                 <label htmlFor="pais">pais:</label>
                             </div>
@@ -54,6 +56,10 @@ class WeatherForm extends Component {
             </div>
          );
     }
+}
+
+WeatherForm.propTypes = {
+    getWether: PropTypes.func.isRequired
 }
  
 export default WeatherForm;

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class Weather extends Component {
 
@@ -36,6 +37,10 @@ class Weather extends Component {
             </div>
          );
     }
+}
+
+Weather.propTypes = {
+    response: PropTypes.object.isRequired
 }
  
 export default Weather;
